@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I am Aneetta</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="light.css" id="theme" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const themeStylesheet = document.getElementById("theme");
+        const themeToggle = document.getElementById("theme-toggle");
+        themeToggle.addEventListener("click", () => {
+          if (themeStylesheet.href.includes("style")) {
+            themeStylesheet.href = "light.css";
+            themeToggle.innerText = "Switch to dark mode";
+          } else {
+            themeStylesheet.href = "style.css";
+            themeToggle.innerText = "Switch to light mode";
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="start">
+      <div class="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#Academics">Academics</a></li>
+          <li><a href="#Goals">Goals & Skills</a></li>
+          <li>
+            <button id="theme-toggle" class="mode">Switch to dark mode</button>
+          </li>
+        </ul>
+      </div>
+      <div class="home" id="home">
+        <p>Hey,<br />I am Aneetta :)</p>
+        <br />
+        <a href="https://github.com/Aneetta-M-S"
+          ><i class="fa fa-github" style="font-size: 2rem; color: gray"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/aneetta-sajan-2827231a1"
+          ><i class="fa fa-linkedin" style="font-size: 2rem; color: gray"></i
+        ></a>
+        <a href="https://twitter.com/MaryAneetta"
+          ><i class="fa fa-twitter" style="font-size: 2rem; color: gray"></i
+        ></a>
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <div class="aboutpic">
+        <h1><u>About Me</u></h1>
+        <img
+          src="woman-removebg-preview.png"
+          alt="a pic"
+          width="200"
+          height="400"
+        />
+      </div>
+      <div class="aboutinfo">
+        <p>
+          <br />
+          Hellooo!! I am Aneetta Mary Sajan, a tech enthusiast filled with keen
+          interest to learn, explore and grow.<br />
+          My hobbies and interest include reading books, cycling, gardening and
+          playing volleyball. Some of my traits include being an approachable
+          person, a keen listener and also a cooperative team member. I always
+          do my best to accomplish a task given to me.My fields of interest
+          include Web development,Ethical Hacking and Cyber Security.
+        </p>
+      </div>
+    </div>
+
+    <div class="Academics" id="Academics">
+      <div class="Academics-info">
+        <ul>
+          <li>Schooling:Navy Children School,Kochi (2007-2019)</li>
+          <li>Graduation:Model Engineering College,Thrikkakara (2019-2023)</li>
+        </ul>
+      </div>
+      <div class="academics-img">
+        <h1><u>Academics</u></h1>
+        <img src="clg.png" alt="school" width="200" height="300" />
+      </div>
+    </div>
+
+    <div class="Goals" id="Goals">
+      <div class="goalspic">
+        <h1><u>Goals & Skills</u></h1>
+        <img src="goal.png" alt="goalpic" />
+      </div>
+      <div class="goalsinfo">
+        <p>
+          <br />
+          Right now, exploring Web development both frontend and backend and
+          also ready enhance my skills in it. <br />Further, I am also
+          interested in Ethical hacking and cybersecurity and also want to
+          contribute to bringing up awareness among people about it.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p class="info">
+        Made with
+        <i class="fa fa-heart" style="font-size: 1rem; color: black"></i> by
+        Aneetta
+      </p>
+      <p style="font-size: 12px">Copyright © 2020, Aneetta Mary</p>
+    </div>
+  </body>
+</html>
